@@ -1,0 +1,115 @@
+$MontserratBold: MontserratBold;
+$RobotoRegular: RobotoRegular;
+
+.whytobuy {
+  background: #F8F8F8;
+  padding: 92px 0 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    width: 1056px;
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      display: flex;
+      margin-bottom: 80px;
+
+      &-left {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-circle {
+          width: 62px;
+          height: 62px;
+          position: absolute;
+          background: rgba(255, 255, 255, 0.4);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 20px solid white;
+          }
+        }
+      }
+      &-right {
+        padding: 17px 0 0 60px;
+        &-title {
+          margin-bottom: 50px;
+          p {
+            font-family: $MontserratBold;
+            font-size: 40px;
+            line-height: 126%;
+            /* or 50px */
+            color: #14303D;
+          }
+        }
+        &-list {
+          ul {
+            list-style: none;
+            li::before {
+              font-size: 24px;
+              content: "\2022";
+              color: #000;
+              font-weight: bold;
+              display: inline-block;
+              width: 1em;
+              margin-left: -1em;
+            }
+            li {
+              margin-left: 20px;
+              font-family: $RobotoRegular;
+              font-size: 18px;
+              line-height: 160%;
+              color: #595959;
+            }
+          }
+        }
+      }
+    }
+    &-bottom {
+      &-text {
+        p {
+          font-family: $RobotoRegular;
+          font-size: 18px;
+          line-height: 160%;
+          display: flex;
+          align-items: center;
+          color: #41636C;
+        }
+        p:nth-child(2) {
+          margin-bottom: 40px;
+        }
+      }
+      &-button {
+        margin-top: 75px;
+        box-shadow: 0 22px 32px -15px rgba(14, 32, 37, 0.3);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 60px;
+        border-radius: 6px;
+        font-family: $MontserratBold;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #27CCD7;
+      }
+    }
+  }
+}

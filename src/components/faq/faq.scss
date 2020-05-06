@@ -1,0 +1,112 @@
+$MontserratBold: MontserratBold;
+$HelveticaNeueCyrBold: HelveticaNeueCyrBold;
+
+.faq {
+  margin: 0 auto;
+  padding: 130px 0 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-title {
+    font-family: $MontserratBold;
+    font-size: 50px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #363E4B;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  &-questions {
+    display: flex;
+    margin-bottom: 190px;
+    &-left, &-right {
+      &-item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 516px;
+        height: 60px;
+        box-shadow: 0 4px 14px rgba(34, 42, 51, 0.07);
+        border-radius: 4px;
+        padding: 20px 21px;
+        margin-bottom: 5px;
+
+        &-text {
+          font-family: $HelveticaNeueCyrBold;
+          font-size: 16px;
+          line-height: 150%;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.02em;
+          color: #363E4B;
+        }
+        &-triangle {
+          width: 0;
+          height: 0;
+          border-top: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+          border-left: 8px solid #27CCD7;
+        }
+      }
+      &-item:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-left {
+      margin-right: 25px;
+    }
+  }
+  &-img {
+    position: relative;
+    width: 1055px;
+    height: 299px;
+    background: rgba(77, 52, 52, 0.7);
+    border-radius: 15px;
+    padding: 40px 70px 50px 80px;
+    &-logo {
+      margin-top: -25px;
+    }
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      p {
+        width: 530px;
+        font-family: $MontserratBold;
+        font-size: 38px;
+        line-height: 126%;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+      }
+    }
+    &-button {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 204px;
+      height: 60px;
+      background: #27CCD7;
+      border: 2px solid #27CCD7;
+      box-sizing: border-box;
+      border-bottom-right-radius: 12px;
+      border-top-left-radius: 12px;
+      p {
+        font-family: $MontserratBold;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
+    &-car {
+      top: 0;
+      left: 0;
+      z-index: -1;
+      position: absolute;
+    }
+  }
+}

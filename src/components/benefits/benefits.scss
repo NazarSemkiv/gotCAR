@@ -1,0 +1,60 @@
+//variables for fonts
+$HelveticaNeueCyrRegular: HelveticaNeueCyrRegular;
+$MontserratBold: MontserratBold;
+
+.benefits > div {
+  margin: 0 auto;
+  width: 990px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.benefits {
+  background: #14303D;
+  padding: 72px 0 105px;
+
+  &-title {
+    font-family: $MontserratBold;
+    font-size: 40px;
+    line-height: 126%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 190px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    &-top, &-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      div {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          line-height: 150%;
+          text-align: center;
+          color: #FFFFFF;
+        }
+        p:nth-child(1) {
+          font-family: $MontserratBold;
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        p:nth-child(2) {
+          width: 90%;
+          font-family: $HelveticaNeueCyrRegular;
+          font-size: 16px
+        }
+      }
+    }
+    &-top {
+      margin-bottom: 200px;
+    }
+  }
+}

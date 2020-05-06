@@ -1,0 +1,280 @@
+//variables for fonts
+$HelveticaNeueCyrBold: HelveticaNeueCyrBold;
+$MontserratBold: MontserratBold;
+$RobotoRegular: RobotoRegular;
+
+.slider > div {
+  width: 1056px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  //padding: 135px 192px 180px;
+  padding: 135px 0 180px;
+
+  &-title {
+    font-family: $MontserratBold;
+    font-size: 40px;
+    line-height: 126%;
+    /* or 50px */
+    text-align: center;
+    color: #103D4A;
+    margin-bottom: 25px;
+  }
+  &-text {
+    width: 510px;
+    font-family: $RobotoRegular;
+    font-size: 18px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #41636C;
+    margin-bottom: 105px;
+  }
+  &-range {
+    width: 77.2511848341%;
+
+   .rc-slider {
+     &-rail {
+       background-color: #fff;
+       border: 1px solid #E8EBEE;
+       box-sizing: border-box;
+       border-radius: 30px;
+       height: 7px;
+     }
+     &-track {
+       height: 7px;
+       background: #B0B6BC;
+       border-radius: 30px;
+     }
+     &-step {
+       .rc-slider-dot {
+         width: 0;
+         height: 0;
+         border: 0 solid #fff;
+       }
+     }
+     &-handle {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 26px;
+       height: 26px;
+       margin-top: -10px;
+       background: #fff;
+       border: 0 solid #fff;
+       box-shadow: 0 4px 18px rgba(99, 98, 105, 0.4);
+     }
+     &-handle::before {
+       display: block;
+       content: '';
+       width: 14px;
+       height: 14px;
+       border-radius: 50%;
+       background: #27CCD7;
+     }
+     &-mark {
+       font-family: $RobotoRegular;
+       font-size: 16px;
+       line-height: 150%;
+       top: -35px;
+       /* or 24px */
+       text-align: center;
+       color: #595959;
+
+       &-text {
+         width: fit-content;
+       }
+
+       &-text-active {
+         font-family: $HelveticaNeueCyrBold;
+         font-size: 18px;
+         color: #2C434F;
+       }
+     }
+   }
+  }
+  &-carousel {
+    width: 100%;
+
+    &-item {
+      width: 254px !important;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 2px 11px 19px rgba(54, 64, 89, 0.16);
+      border-radius: 4px;
+      &-top {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 31px 6px 24px;
+        background: linear-gradient(196.94deg, #FFFFFF 6.53%, #CDD2D2 57.5%);
+
+        &-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          position: absolute;
+          bottom: -14px;
+          right: 15px;
+          width: 28px;
+          height: 28px;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+        &-button::before {
+          transform: rotate(-45deg);
+          display: block;
+          content: '';
+          margin-right: 3px;
+          width: 7px;
+          height: 7px;
+          background-color: transparent;
+          border-right: 2px solid #27CCD7;
+          border-bottom: 2px solid #27CCD7;
+        }
+      }
+      &-bottom {
+        background: #14303D;
+        box-shadow: 0 4px 30px rgba(54, 64, 89, 0.05);
+        border-radius: 4px;
+        padding: 15px 15px 25px;
+        &-car-name {
+          width: 225px;
+          font-family: $MontserratBold;
+          font-size: 18px;
+          line-height: 150%;
+          /* or 27px */
+          text-align: center;
+          color: #FFFFFF;
+          border-bottom: 1px solid #103D4A;
+          padding-bottom: 5px;
+        }
+        &-price-one {
+          margin-top: 5px;
+          font-family: $HelveticaNeueCyrBold;
+          font-size: 21px;
+          line-height: 150%;
+          /* or 31px */
+          text-align: center;
+          color: #35EFFB;
+        }
+        &-price-two {
+          margin-top: 15px;
+          font-family: $HelveticaNeueCyrBold;
+          font-size: 14px;
+          line-height: 150%;
+          text-align: center;
+          color: #58AFC2;
+        }
+        &-text {
+          font-family: $RobotoRegular;
+          font-size: 14px;
+          line-height: 150%;
+          text-align: center;
+          color: #BAC1C2;
+        }
+        &-text:nth-child(1) {
+          margin-top: 10px;
+        }
+        &-text:nth-child(2) {
+          margin-top: 5px;
+        }
+      }
+    }
+    .slick-prev, .slick-next {
+      z-index: 3;
+      width: 44px;
+      height: 44px;
+      background: #188DA1;
+    }
+    .slick-prev {
+      left: -84px;
+    }
+    .slick-next {
+      right: -84px;
+    }
+    .slick-prev::before, .slick-next::before {
+      margin-left: 10px;
+      opacity: 1;
+      transform: rotate(-45deg);
+      display: block;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-color: transparent;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+    }
+    .slick-prev::before {
+      transform: rotate(135deg);
+      margin-left: 17px;
+    }
+    .slick-disabled {
+      background: #E0E0E0;
+    }
+    .slick-track {
+      display: flex;
+      padding: 60px 0 30px;
+    }
+    .slick-list {
+      overflow: hidden;
+    }
+    .slick-slide > div {
+        display: flex;
+        justify-content: center;
+    }
+    .slick-dots {
+      bottom: -6px;
+    }
+    .slick-dots li button::before {
+      color: #B0B6BC;
+      opacity: 1;
+      font-size: 8px;
+    }
+    .slick-dots li.slick-active button:before {
+      color: #188DA1;
+    }
+  }
+  &-buttons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      box-shadow: 0 22px 32px -15px rgba(14, 32, 37, 0.3);
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 230px;
+      height: 60px;
+      border-radius: 6px;
+      font-family: $MontserratBold;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    div:nth-child(1) {
+      background: #27CCD7;
+      margin-right: 7px;
+    }
+    div:nth-child(2) {
+      background: #14303D;
+      margin-left: 7px;
+    }
+  }
+}
+
