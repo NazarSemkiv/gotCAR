@@ -191,6 +191,13 @@ $RobotoRegular: RobotoRegular;
         }
       }
     }
+    &-item:hover {
+      //transition: 0.3s;
+      transform: scale(1.03);
+    }
+    &-item:active {
+      transform: scale(.98);
+    }
     .slick-prev, .slick-next {
       z-index: 3;
       width: 44px;
@@ -265,6 +272,14 @@ $RobotoRegular: RobotoRegular;
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;
+      transition: 0.3s;
+    }
+    div:hover {
+      transition: 0.3s;
+      transform: scale(1.05);
+    }
+    div:active {
+      transform: scale(.98);
     }
 
     div:nth-child(1) {

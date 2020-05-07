@@ -94,6 +94,14 @@ $RobotoLight: RobotoLight;
           text-align: center;
           text-transform: uppercase;
           color: #27CCD7;
+          transition: 0.3s;
+        }
+        &-submit:hover {
+          transition: 0.3s;
+          transform: scale(1.05);
+        }
+        &-submit:active {
+          transform: scale(.98);
         }
       }
     }

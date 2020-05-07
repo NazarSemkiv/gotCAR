@@ -109,6 +109,14 @@ $RobotoRegular: RobotoRegular;
         text-transform: uppercase;
         color: #FFFFFF;
         background: #27CCD7;
+        transition: 0.3s;
+      }
+      &-button:hover {
+        transition: 0.3s;
+        transform: scale(1.05);
+      }
+      &-button:active {
+        transform: scale(.98);
       }
     }
   }

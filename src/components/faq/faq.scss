@@ -51,6 +51,12 @@ $HelveticaNeueCyrBold: HelveticaNeueCyrBold;
           border-left: 8px solid #27CCD7;
         }
       }
+      &-item:hover {
+        transform: scale(1.02);
+      }
+      &-item:active {
+        transform: scale(.98);
+      }
       &-item:last-child {
         margin-bottom: 0;
       }
@@ -93,6 +99,7 @@ $HelveticaNeueCyrBold: HelveticaNeueCyrBold;
       box-sizing: border-box;
       border-bottom-right-radius: 12px;
       border-top-left-radius: 12px;
+      transition: 0.3s;
       p {
         font-family: $MontserratBold;
         font-size: 16px;
@@ -101,6 +108,13 @@ $HelveticaNeueCyrBold: HelveticaNeueCyrBold;
         text-transform: uppercase;
         color: #FFFFFF;
       }
+    }
+    &-button:hover {
+      transition: 0.3s;
+      transform: scale(1.05);
+    }
+    &-button:active {
+      transform: scale(.98);
     }
     &-car {
       top: 0;

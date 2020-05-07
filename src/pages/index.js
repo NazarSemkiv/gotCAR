@@ -9,17 +9,55 @@ import WhyToBuy from '../components/why-to-buy/why-to-buy';
 import Faq from '../components/faq/faq';
 import Contacts from '../components/contacts/contacts';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="GotCAR" />
-    <Header/>
-    <SliderSection/>
-    <Benefits/>
-    <Schema/>
-    <WhyToBuy/>
-    <Faq/>
-    <Contacts/>
-  </Layout>
-);
+class IndexPage extends React.Component {
+
+      constructor(props) {
+          super(props);
+          this.state = {
+            ...this.state,
+            loading: true
+          }
+      }
+
+      componentDidMount = async () => {
+        this.loaderTimeOut().then(() => {
+          this.setState({
+            loading: false
+          })
+        })
+      };
+
+    render() {
+      const { loading } = this.state;
+      if (loading) {
+        return (
+          <div className="preloader">
+            <div className="preloader__row">
+                <div className="preloader__item"></div>
+                <div className="preloader__item"></div>
+            </div>
+        </div>
+        )
+      }
+          return (
+            <Layout>
+                <SEO title="GotCAR" />
+                    <Header/>
+                    <SliderSection/>
+                    <Benefits/>
+                    <Schema/>
+                    <WhyToBuy/>
+                    <Faq/>
+                    <Contacts/>
+            </Layout>
+          )
+      }
+
+      loaderTimeOut = () => {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(), 2500)
+      })
+      }
+}
 
 export default IndexPage

@@ -121,12 +121,14 @@ header {
         justify-content: center;
         align-items: center;
         margin-bottom: 11px;
+        transition: 0.3s;
         svg {
           color: #65868E;
           font-size: 20px;
         }
       }
       div:hover {
+        transition: 0.3s;
         background: #188DA1;
         border-radius: 4px;
         svg {
@@ -182,6 +184,14 @@ header {
          text-transform: uppercase;
          color: #FFFFFF;
          box-shadow: 0 22px 32px -15px rgba(14,32,37,0.3);
+         transition: 0.3s;
+       }
+       div:nth-child(3):hover {
+         transition: 0.3s;
+         transform: scale(1.05);
+       }
+       div:nth-child(3):active {
+         transform: scale(.98);
        }
      }
       div:nth-child(2) {
