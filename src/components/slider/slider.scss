@@ -25,6 +25,7 @@ $RobotoRegular: RobotoRegular;
     color: #103D4A;
     margin-bottom: 25px;
   }
+
   &-text {
     width: 510px;
     font-family: $RobotoRegular;
@@ -36,69 +37,76 @@ $RobotoRegular: RobotoRegular;
     color: #41636C;
     margin-bottom: 105px;
   }
+
   &-range {
     width: 77.2511848341%;
 
-   .rc-slider {
-     &-rail {
-       background-color: #fff;
-       border: 1px solid #E8EBEE;
-       box-sizing: border-box;
-       border-radius: 30px;
-       height: 7px;
-     }
-     &-track {
-       height: 7px;
-       background: #B0B6BC;
-       border-radius: 30px;
-     }
-     &-step {
-       .rc-slider-dot {
-         width: 0;
-         height: 0;
-         border: 0 solid #fff;
-       }
-     }
-     &-handle {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       width: 26px;
-       height: 26px;
-       margin-top: -10px;
-       background: #fff;
-       border: 0 solid #fff;
-       box-shadow: 0 4px 18px rgba(99, 98, 105, 0.4);
-     }
-     &-handle::before {
-       display: block;
-       content: '';
-       width: 14px;
-       height: 14px;
-       border-radius: 50%;
-       background: #27CCD7;
-     }
-     &-mark {
-       font-family: $RobotoRegular;
-       font-size: 16px;
-       line-height: 150%;
-       top: -35px;
-       /* or 24px */
-       text-align: center;
-       color: #595959;
+    .rc-slider {
+      &-rail {
+        background-color: #fff;
+        border: 1px solid #E8EBEE;
+        box-sizing: border-box;
+        border-radius: 30px;
+        height: 7px;
+      }
 
-       &-text {
-         width: fit-content;
-       }
+      &-track {
+        height: 7px;
+        background: #B0B6BC;
+        border-radius: 30px;
+      }
 
-       &-text-active {
-         font-family: $HelveticaNeueCyrBold;
-         font-size: 18px;
-         color: #2C434F;
-       }
-     }
-   }
+      &-step {
+        .rc-slider-dot {
+          width: 0;
+          height: 0;
+          border: 0 solid #fff;
+        }
+      }
+
+      &-handle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26px;
+        height: 26px;
+        margin-top: -10px;
+        background: #fff;
+        border: 0 solid #fff;
+        box-shadow: 0 4px 18px rgba(99, 98, 105, 0.4);
+      }
+
+      &-handle::before {
+        display: block;
+        content: '';
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #27CCD7;
+      }
+
+      &-mark {
+        font-family: $RobotoRegular;
+        font-size: 16px;
+        line-height: 150%;
+        top: -35px;
+        /* or 24px */
+        text-align: center;
+        color: #595959;
+
+        &-text {
+          width: fit-content;
+        }
+
+        &-text-active {
+          font-family: $HelveticaNeueCyrBold;
+          font-size: 18px;
+          color: #2C434F;
+        }
+      }
+    }
   }
+
   &-carousel {
     width: 100%;
 
@@ -108,6 +116,7 @@ $RobotoRegular: RobotoRegular;
       flex-direction: column;
       box-shadow: 2px 11px 19px rgba(54, 64, 89, 0.16);
       border-radius: 4px;
+
       &-top {
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
@@ -130,7 +139,9 @@ $RobotoRegular: RobotoRegular;
           height: 28px;
           background-color: #fff;
           border-radius: 50%;
+
         }
+
         &-button::before {
           transform: rotate(-45deg);
           display: block;
@@ -143,11 +154,13 @@ $RobotoRegular: RobotoRegular;
           border-bottom: 2px solid #27CCD7;
         }
       }
+
       &-bottom {
         background: #14303D;
         box-shadow: 0 4px 30px rgba(54, 64, 89, 0.05);
         border-radius: 4px;
         padding: 15px 15px 25px;
+
         &-car-name {
           width: 225px;
           font-family: $MontserratBold;
@@ -159,6 +172,7 @@ $RobotoRegular: RobotoRegular;
           border-bottom: 1px solid #103D4A;
           padding-bottom: 5px;
         }
+
         &-price-one {
           margin-top: 5px;
           font-family: $HelveticaNeueCyrBold;
@@ -168,6 +182,7 @@ $RobotoRegular: RobotoRegular;
           text-align: center;
           color: #35EFFB;
         }
+
         &-price-two {
           margin-top: 15px;
           font-family: $HelveticaNeueCyrBold;
@@ -176,6 +191,7 @@ $RobotoRegular: RobotoRegular;
           text-align: center;
           color: #58AFC2;
         }
+
         &-text {
           font-family: $RobotoRegular;
           font-size: 14px;
@@ -183,33 +199,43 @@ $RobotoRegular: RobotoRegular;
           text-align: center;
           color: #BAC1C2;
         }
+
         &-text:nth-child(1) {
           margin-top: 10px;
         }
+
         &-text:nth-child(2) {
           margin-top: 5px;
         }
       }
     }
+
     &-item:hover {
       //transition: 0.3s;
       transform: scale(1.03);
+
     }
+
     &-item:active {
       transform: scale(.98);
     }
+
     .slick-prev, .slick-next {
       z-index: 3;
       width: 44px;
       height: 44px;
       background: #188DA1;
     }
+
     .slick-prev {
       left: -84px;
+
     }
+
     .slick-next {
       right: -84px;
     }
+
     .slick-prev::before, .slick-next::before {
       margin-left: 10px;
       opacity: 1;
@@ -221,42 +247,53 @@ $RobotoRegular: RobotoRegular;
       background-color: transparent;
       border-right: 2px solid #fff;
       border-bottom: 2px solid #fff;
+
     }
+
     .slick-prev::before {
       transform: rotate(135deg);
       margin-left: 17px;
     }
+
     .slick-disabled {
       background: #E0E0E0;
     }
+
     .slick-track {
       display: flex;
       padding: 60px 0 30px;
     }
+
     .slick-list {
       overflow: hidden;
     }
+
     .slick-slide > div {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
+
     .slick-dots {
       bottom: -6px;
     }
+
     .slick-dots li button::before {
       color: #B0B6BC;
       opacity: 1;
       font-size: 8px;
     }
+
     .slick-dots li.slick-active button:before {
       color: #188DA1;
     }
   }
+
   &-buttons {
     margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     div {
       box-shadow: 0 22px 32px -15px rgba(14, 32, 37, 0.3);
       cursor: pointer;
@@ -274,10 +311,12 @@ $RobotoRegular: RobotoRegular;
       color: #FFFFFF;
       transition: 0.3s;
     }
+
     div:hover {
       transition: 0.3s;
       transform: scale(1.05);
     }
+
     div:active {
       transform: scale(.98);
     }
@@ -286,10 +325,102 @@ $RobotoRegular: RobotoRegular;
       background: #27CCD7;
       margin-right: 7px;
     }
+
     div:nth-child(2) {
       background: #14303D;
       margin-left: 7px;
     }
+
   }
 }
+.slider-range {
+  .desctop{
+    display: block;
+  }
+  .mobile{
+    width: 100%;
+    display: none;
+  }
+}
+.slider-carousel-item-bottom{
+  height: 200px;
+}
+
+
+@media screen and(max-width: 1300px) {
+  .slider > div {
+    max-width: 72vw;
+    width: 100%;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .slider > div {
+    max-width: 94vw;
+    width: 100%;
+    .slider-range {
+      width: 80%;
+    }
+    .slider-carousel {
+      width: 55vw;
+    }
+    .slider-text{
+      width: 94vw;
+    }
+  }
+}
+@media screen and(max-width: 480px) {
+  .slider > div {
+    padding-top: 170px;
+    max-width: 94vw;
+    width: 100%;
+
+    .slider-title{
+      width: 94vw;
+      font-size: 35px;
+    }
+    .slider-text{
+      width: 94vw;
+    }
+
+    .slider-carousel {
+      width: 95%;
+    }
+    .slider-buttons{
+      flex-direction: column;
+    }
+    .slider-buttons div:nth-child(1) {
+      margin-right: 0;
+      margin-bottom: 25px;
+      width: 250px;
+    }
+    .slider-buttons div:nth-child(2) {
+      margin-left: 0;
+      width: 250px;
+    }
+  }
+
+  .slider-range {
+    width: 70%;
+    .desctop{
+      display: none;
+    }
+    .mobile{
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  .rc-slider-mark-text{
+    font-size: 12px;
+  }
+
+  .slider-range .rc-slider-mark-text-active{
+    font-size: 13px;
+    visibility: visible
+
+  }
+}
+
 

@@ -29,6 +29,7 @@ $MontserratBold: MontserratBold;
     &-top, &-bottom {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-between;
 
       div {
@@ -36,6 +37,7 @@ $MontserratBold: MontserratBold;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 50px;
         p {
           line-height: 150%;
           text-align: center;
@@ -55,6 +57,45 @@ $MontserratBold: MontserratBold;
     }
     &-top {
       margin-bottom: 200px;
+    }
+  }
+}
+@media screen and(max-width: 1200px){
+  .benefits > div {
+    max-width: 94vw;
+    width: 100%;
+    .benefits-content-top{
+      div{
+       width: 45%;
+      }
+    }
+  }
+}
+@media screen and(max-width: 480px){
+  .benefits {
+    padding: 72px 0 0;
+    div {
+      max-width: 94vw;
+      width: 100%;
+      .benefits-content-top{
+        div{
+          p{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .benefits-title {
+        margin-bottom: 50px;
+        font-size: 35px;
+      }
+      .benefits-content-top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        div {
+          width: 80%;
+        }
+      }
     }
   }
 }

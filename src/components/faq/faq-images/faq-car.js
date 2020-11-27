@@ -14,7 +14,7 @@ class FaqCar extends React.Component {
       <StaticQuery
         query={graphql`
                 query {
-                      faqCar: file(relativePath: { eq: "faq-car.svg" }) {
+                      faqCar: file(relativePath: { eq: "car-mustang.png" }) {
         publicURL
       },
                 }

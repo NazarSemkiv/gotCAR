@@ -18,6 +18,7 @@ $RobotoLight: RobotoLight;
     &-map {
       position: relative;
       margin-right: 50px;
+
       svg {
         font-size: 60px;
         color: #27CCD7;
@@ -26,9 +27,11 @@ $RobotoLight: RobotoLight;
         position: absolute;
       }
     }
+
     &-controls {
       display: flex;
       flex-direction: column;
+
       &-title {
         font-family: $HelveticaNeueCyrBold;
         font-size: 44px;
@@ -38,9 +41,11 @@ $RobotoLight: RobotoLight;
         color: #FFFFFF;
         margin-bottom: 40px;
       }
+
       &-form {
         display: flex;
         flex-direction: column;
+
         &-input {
           width: 420px;
           outline: none;
@@ -54,12 +59,14 @@ $RobotoLight: RobotoLight;
           line-height: 80%;
           color: #9A99A2;
         }
+
         &-input::placeholder {
           font-family: $HelveticaNeueCyrRegular;
           font-size: 16px;
           line-height: 80%;
           color: #9A99A2;
         }
+
         &-textarea {
           outline: none;
           margin-bottom: 30px;
@@ -72,12 +79,14 @@ $RobotoLight: RobotoLight;
           line-height: 80%;
           color: #9A99A2;
         }
+
         &-textarea::placeholder {
           font-family: $HelveticaNeueCyrRegular;
           font-size: 16px;
           line-height: 80%;
           color: #9A99A2;
         }
+
         &-submit {
           cursor: pointer;
           outline: none;
@@ -96,26 +105,31 @@ $RobotoLight: RobotoLight;
           color: #27CCD7;
           transition: 0.3s;
         }
+
         &-submit:hover {
           transition: 0.3s;
           transform: scale(1.05);
         }
+
         &-submit:active {
           transform: scale(.98);
         }
       }
     }
   }
+
   &-footer {
     display: flex;
     justify-content: space-between;
     padding: 105px 0 95px;
     border-bottom: 1px solid #3B3D47;
+
     &-block {
       width: 100%;
       display: flex;
       justify-content: space-between;
     }
+
     &-item {
       font-family: $HelveticaNeueCyrBold;
       font-size: 20px;
@@ -138,17 +152,21 @@ $RobotoLight: RobotoLight;
           color: #27CCD7;;
         }
       }
+
       p:nth-child(1) {
         margin-top: 26px;
       }
     }
+
     &-item:last-child {
       margin-right: 0;
+
       p {
         span {
           margin-left: 14px;
         }
       }
+
       p:last-child {
         span {
           margin-left: 29px;
@@ -156,6 +174,7 @@ $RobotoLight: RobotoLight;
       }
     }
   }
+
   &-copyright {
     padding: 15px 0;
     font-family: $RobotoLight;
@@ -163,5 +182,107 @@ $RobotoLight: RobotoLight;
     line-height: 14px;
     text-align: center;
     color: #858899;
+  }
+}
+
+@media screen and(max-width: 1200px) {
+  .contacts {
+    .contacts-form {
+      flex-direction: column;
+    }
+    .contacts-form-map {
+      width: 100%;
+      padding-bottom: 40px;
+      img {
+        width: 100%;
+      }
+      svg{
+        top:280px;
+        left: 410px;
+      }
+    }
+    .contacts-form-controls-title {
+      margin-bottom: 20px;
+    }
+    .contacts-form-controls-form {
+      width: 60vw;
+      .contacts-form-controls-form-input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 980px) {
+  .contacts {
+    .contacts-form-map {
+      svg {
+        top: 208px;
+        left: 285px;
+      }
+    }
+  }
+
+  .contacts-footer {
+    max-width: 94vw;
+    padding: 0;
+    justify-content: center;
+    .contacts-footer-block {
+      padding: 50px 0;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .contacts-footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 30px;
+        margin-right: 0;
+      }
+
+    }
+  }
+}
+@media screen and(max-width: 768px) {
+  .contacts {
+    width: 100vw;
+    div{
+      width: 100%;
+    }
+    .contacts-form-controls-title {
+      font-size: 35px;
+    }
+    .contacts-form {
+      flex-direction: column;
+    }
+    .contacts-form-map {
+      width: 100%;
+      padding-bottom: 40px;
+      img {
+        width: 100%;
+      }
+      svg{
+        font-size: 12vw;
+        top: 26vw;
+        left: 43vw;
+      }
+    }
+    .contacts-form-controls{
+      width: 94vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+
+    }
+    .contacts-form-controls-title {
+      margin-bottom: 20px;
+    }
+    .contacts-form-controls-form {
+      width: 100%;
+      .contacts-form-controls-form-input {
+        width: 100%;
+      }
+    }
   }
 }

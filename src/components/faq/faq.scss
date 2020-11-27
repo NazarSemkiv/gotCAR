@@ -69,7 +69,6 @@ $HelveticaNeueCyrBold: HelveticaNeueCyrBold;
     position: relative;
     width: 1055px;
     height: 299px;
-    background: rgba(77, 52, 52, 0.7);
     border-radius: 15px;
     padding: 40px 70px 50px 80px;
     &-logo {
@@ -102,7 +101,7 @@ $HelveticaNeueCyrBold: HelveticaNeueCyrBold;
       transition: 0.3s;
       p {
         font-family: $MontserratBold;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 150%;
         text-align: center;
         text-transform: uppercase;
@@ -121,6 +120,98 @@ $HelveticaNeueCyrBold: HelveticaNeueCyrBold;
       left: 0;
       z-index: -1;
       position: absolute;
+    }
+  }
+}
+@media screen and(max-width: 1200px){
+  .faq {
+    max-width: 94vw;
+    div{
+      width: 100%;
+    }
+    .faq-title{
+      width: 100%;
+    }
+    .faq-questions{
+
+      .faq-questions-left-item-triangle{
+        width: 10px;
+      }
+    }
+    .faq-img{
+      .faq-img-car{
+        width: 100%;
+        height: 280px;
+      }
+      .faq-img-title{
+        p{
+          width: 400px;
+          font-size: 30px;
+        }
+      }
+      .faq-img-logo{
+        max-width: 200px;
+        width: 100%;
+      }
+      .faq-img-button{
+        max-width: 20vw;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 768px){
+  .faq {
+
+    .faq-title{
+      font-size: 30px;
+    }
+    .faq-questions{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+      .faq-questions-left{
+        margin-right: 0;
+      }
+      .faq-questions-left-item-triangle{
+        width: 10px;
+      }
+    }
+    .faq-img{
+      display: flex;
+     flex-direction: column;
+      align-items: center;
+
+      .faq-img-car{
+        display: none;
+      }
+      .faq-img-title{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        p{
+          text-align: center;
+          color: #363E4B;
+          max-width: 94vw;
+          width: 400px;
+          font-size: 30px;
+        }
+      }
+      .faq-img-logo{
+        max-width: 200px;
+        width: 100%;
+        padding-bottom: 30px;
+      }
+      .faq-img-button{
+        padding: 20px;
+        max-width: 100%;
+        width: 200px;
+        display: flex;
+       align-items: center;
+        height: 60px;
+
+      }
     }
   }
 }

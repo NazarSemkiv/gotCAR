@@ -14,7 +14,7 @@ class HeaderCar extends React.Component {
       <StaticQuery
         query={graphql`
                 query {
-                      HeaderCar: file(relativePath: { eq: "header-car.svg" }) {
+                      HeaderCar: file(relativePath: { eq: "image17.png" }) {
         publicURL
       },
                 }

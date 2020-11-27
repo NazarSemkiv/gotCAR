@@ -121,3 +121,37 @@ $RobotoRegular: RobotoRegular;
     }
   }
 }
+
+@media screen and(max-width: 1200px){
+  .whytobuy {
+    .whytobuy-content{
+      max-width: 94vw;
+      width: 100%;
+      .whytobuy-content-top{
+        flex-direction: column;
+        .whytobuy-content-top-left{
+          img{
+            width: 100%;
+          }
+        }
+        .whytobuy-content-top-right{
+          padding: 20px 0 0 0 ;
+
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 768px){
+  .whytobuy-content-top-right-title{
+    p{
+      font-size: 35px;
+    }
+  }
+}
+
+
+
+
+
+

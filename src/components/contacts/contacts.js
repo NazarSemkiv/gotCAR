@@ -12,14 +12,14 @@ class Contacts extends React.Component {
 
   render() {
     return (
-      <div className="contacts">
+      <div className="contacts" id={'contactDesctop'}>
         <div>
           <div className="contacts-form">
             <div className="contacts-form-map">
               <ContactsMap/>
               <FontAwesomeIcon icon={faMapMarkerAlt} />
             </div>
-            <div className="contacts-form-controls">
+            <div  className="contacts-form-controls" id={'contactMobile'}>
               <p className="contacts-form-controls-title">Звяжіться з нами</p>
               <form className="contacts-form-controls-form" method="post" action="#">
                 <input placeholder="Ім'я" className="contacts-form-controls-form-input" name="name" type="text"/>
