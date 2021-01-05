@@ -16,6 +16,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 
+
 // class Header extends React.Component {
   const Header = () => {
   // constructor(props) {
@@ -67,28 +68,24 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
           </div>
 
           <div className="header-bottom">
-            <div className="header-bottom-text">
-              <div>
+            <div className="header-bottom-text  " >
+              <div >
                 <p>Ваш надійний партнер по доставці авто з США</p>
                 <p>- Підбір автомобіля з мінімальними ушкодженнями відштовхуючись від вашого бюджету <br/>
                   - Купівля на офіційних сервісах в США з економію 30-40% вартості автомобіля в Україні</p>
                 <div onClick={() =>window.innerWidth>1300?scrollTo('#contactDesctop'):scrollTo('#contactMobile') }>зв'язатись з нами</div>
 
               </div>
-              <div className="header-bottom-tCross">
+              <div className="header-bottom-tCross  carAnimate"    >
                 {visible==0? <p>3-series</p>:''}
                 {visible==1? <p>Q-8</p>:''}
                 {visible==2?  <p>C-class</p>:''}
-                {visible==0? <HeaderBmw  />:''}
+                {visible==0? <  HeaderBmw   />:''}
                 {visible==1? <HeaderAudi/>:''}
-                {visible==2? <HeaderCar />:''}
+                {visible==2? <HeaderCar  />:''}
               </div>
             </div>
-
-            {/*<button className='button-car' onClick={()=>changevisible(1)}>button1</button>*/}
-            {/*<button onClick={()=>changevisible(2)}>button2</button>*/}
             <div className="header-bottom-price">
-              {/*{!visible && <span onClick={()=>changevisible(1)} >показати більше</span>}*/}
               <button className={ visible==0?'button-car activeBtn ':'button-car bmw-btn'} onClick={()=>changevisible(0)}>
               <div className='button-car' >
 

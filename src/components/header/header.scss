@@ -322,6 +322,8 @@ header {
   }
 }
 
+
+
 @media screen and (min-width: 1457px) {
   header {
     .header-top {
@@ -524,7 +526,40 @@ header {
   background: transparent;
   min-width: 155px;
 }
+.carAnimate{
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    left: 180px;
+    //width: 100%;
+    visibility: hidden;
+  }
 
+  to {
+    visibility: visible;
+    right: 115px;
+    //width: 100%;
+  }
+}
+@keyframes slideout {
+  from {
+    left: 115px;
+    //width: 100%;
+    visibility: visible;
+  }
+
+  to {
+    visibility: hidden;
+    right: 180px;
+    //width: 100%;
+  }
+}
+.nonecar{
+  animation-duration: 1s;
+  animation-name: slideout;
+}
 
 
 

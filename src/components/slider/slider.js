@@ -6,8 +6,26 @@ import React ,{useState} from "react"
 import "./slider.scss";
 import Slider from 'rc-slider/lib/Slider';
 import Sliders from "react-slick";
-import SliderOneImg from './slider-images/slider-one-img/slider-one-img';
+import SliderOneImg from './slider-images/slider-one-img';
 import scrollTo from "gatsby-plugin-smoothscroll";
+import SliderFiesta from "./slider-images/car-fiesta";
+import SliderGolf from "./slider-images/car-golf";
+import SliderFocus from "./slider-images/car-focus";
+import SliderFusion from "./slider-images/car-fusion";
+import SliderCorolla from "./slider-images/car-corolla";
+import Slider3Serias from "./slider-images/car-3serias";
+import SliderQ5 from "./slider-images/car-q5";
+import SliderCamry from "./slider-images/car-camry";
+import SliderCClass from "./slider-images/car-cclass";
+import SliderTiguan from "./slider-images/car-tiguan";
+import SliderTesla from "./slider-images/car-tesla";
+import SliderX4 from "./slider-images/car-x4";
+import SliderGls from "./slider-images/car-gls";
+import SliderSport from "./slider-images/car-sport";
+import SliderCC from "./slider-images/car-cc";
+
+
+
 
 class SliderSection extends React.Component {
 
@@ -16,14 +34,16 @@ class SliderSection extends React.Component {
         this.state = {
             value: 100
         };
+
     }
+
     onSliderChange = value => {
         this.setState(
             {
                 value
             },
             () => {
-                console.log(this.state.value);
+
             }
         );
     };
@@ -69,8 +89,8 @@ class SliderSection extends React.Component {
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
+                        infinite: false,
+                        dots: false
                     },
                 },
                 {
@@ -79,7 +99,7 @@ class SliderSection extends React.Component {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: true,
+                        dots: false,
                         arrows: false,
                     },
                 }
@@ -118,7 +138,7 @@ class SliderSection extends React.Component {
                             {/*1*/}
                             { this.state.value>=20?<div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderFiesta/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -147,7 +167,7 @@ class SliderSection extends React.Component {
                             {/*3*/}
                             { this.state.value>=20?   <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderGolf/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -161,7 +181,7 @@ class SliderSection extends React.Component {
                             {/*4*/}
                             { this.state.value>=20? <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderFocus/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -175,7 +195,7 @@ class SliderSection extends React.Component {
                             {/*5*/}
                             { this.state.value>=45?   <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderFusion/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -189,7 +209,7 @@ class SliderSection extends React.Component {
                             {/*6*/}
                             { this.state.value>=45?      <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderCorolla/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -203,7 +223,7 @@ class SliderSection extends React.Component {
                             {/*7*/}
                             { this.state.value>=45?      <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <Slider3Serias/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -223,8 +243,8 @@ class SliderSection extends React.Component {
                             </div>:''}
 
                             { this.state.value>=45?       <div className="slider-carousel-item">
-                                <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                <div className="slider-carousel-item-top car-cc">
+                                    <SliderCC />
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -237,7 +257,7 @@ class SliderSection extends React.Component {
                             </div>:''}
                             { this.state.value>=75?  <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderQ5/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -250,7 +270,7 @@ class SliderSection extends React.Component {
                             </div>:''}
                             { this.state.value>=75?  <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderCamry/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -263,7 +283,7 @@ class SliderSection extends React.Component {
                             </div>:''}
                             { this.state.value>=75?  <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderCClass/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -276,7 +296,7 @@ class SliderSection extends React.Component {
                             </div>:''}
                             { this.state.value>=75? <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderTiguan/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -289,7 +309,7 @@ class SliderSection extends React.Component {
                             </div>:''}
                             { this.state.value>=100?   <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderTesla/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -302,7 +322,7 @@ class SliderSection extends React.Component {
                             </div>:''}
                             { this.state.value>=100?   <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderX4/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -315,7 +335,7 @@ class SliderSection extends React.Component {
                             </div>:''}
                             { this.state.value>=100?    <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderGls/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -328,7 +348,7 @@ class SliderSection extends React.Component {
                             </div>:''}
                             { this.state.value>=100?    <div className="slider-carousel-item">
                                 <div className="slider-carousel-item-top">
-                                    <SliderOneImg/>
+                                    <SliderSport/>
                                     <div className="slider-carousel-item-top-button"></div>
                                 </div>
                                 <div className="slider-carousel-item-bottom">
@@ -344,7 +364,7 @@ class SliderSection extends React.Component {
                     </div>
                     <div  className="slider-buttons">
                         <div onClick={() =>window.innerWidth>1300?scrollTo('#contactDesctop'):scrollTo('#contactMobile') }><p>зв'язатись з нами</p></div>
-                        <div><p>каталог</p></div>
+                        {/*<div><p>каталог</p></div>*/}
                     </div>
                 </div>
             </div>

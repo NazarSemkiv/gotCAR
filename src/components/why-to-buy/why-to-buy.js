@@ -47,7 +47,7 @@ class WhyToBuy extends React.Component {
                 продажу авто з-за кордону (Америки/Європи) самостійно дуже важно. Допущені помилки в
                 паперах можуть стати причиною труднощів при розмитненні, постановці на облік.</p>
             </div>
-            <div className="whytobuy-content-bottom-button"><p>Детальніше</p></div>
+            {/*<div className="whytobuy-content-bottom-button"><p>Детальніше</p></div>*/}
           </div>
         </div>
       </div>

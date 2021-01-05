@@ -8,6 +8,7 @@ import Schema from '../components/schema/schema';
 import WhyToBuy from '../components/why-to-buy/why-to-buy';
 import Faq from '../components/faq/faq';
 import Contacts from '../components/contacts/contacts';
+import ThanksModal from "../components/thanks-modal/thanks-modal";
 
 class IndexPage extends React.Component {
 
@@ -40,7 +41,7 @@ class IndexPage extends React.Component {
         )
       }
           return (
-            <Layout>
+            <Layout  >
                 <SEO title="GotCAR" />
                     <Header/>
                     <SliderSection/>
@@ -49,6 +50,7 @@ class IndexPage extends React.Component {
                     <WhyToBuy/>
                     <Faq/>
                     <Contacts/>
+
             </Layout>
           )
       }

@@ -68,7 +68,7 @@ class Faq extends React.Component {
               <p>Переглянь ціни та обери свій автомобіль</p>
               <FaqLogo/>
             </div>
-            <div className="faq-img-button"><p>переглянути</p></div>
+            {/*<div className="faq-img-button"><p>переглянути</p></div>*/}
           </div>
         </div>
       </div>

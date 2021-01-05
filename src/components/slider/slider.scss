@@ -122,6 +122,7 @@ $RobotoRegular: RobotoRegular;
         border-top-right-radius: 4px;
         position: relative;
         display: flex;
+        height: 168px;
         justify-content: center;
         align-items: center;
         padding: 35px 31px 6px 24px;
@@ -345,7 +346,12 @@ $RobotoRegular: RobotoRegular;
 .slider-carousel-item-bottom{
   height: 200px;
 }
+.car-cc{
+  img{
+    width: 205px;
+  }
 
+}
 
 @media screen and(max-width: 1300px) {
   .slider > div {

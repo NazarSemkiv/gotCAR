@@ -14,7 +14,7 @@ class SliderOneImg extends React.Component {
       <StaticQuery
         query={graphql`
                 query {
-                      sliderOneImg: file(relativePath: { eq: "slider-item-car.svg" }) {
+                      sliderOneImg: file(relativePath: { eq: "slider-car/image-jetta.png" }) {
         publicURL
       },
                 }
