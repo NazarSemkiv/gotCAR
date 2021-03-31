@@ -14,18 +14,9 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-
-
-
-// class Header extends React.Component {
   const Header = () => {
-  // constructor(props) {
-  //   super(props);
-  // }
 
   const [visible,changevisible]=useState(0)
-  // render() {
-
     return (
 
       <header>
@@ -62,7 +53,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
               </div>
               <div>
                 <FontAwesomeIcon icon={faPhoneAlt} />
-                <p>+380933130025  +380973130025 </p>
+                <p>+380933130025  +380983130025 </p>
               </div>
             </div>
           </div>

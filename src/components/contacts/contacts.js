@@ -102,7 +102,7 @@ class Contacts extends React.Component {
                 наші контакти
                 <p>
                   <FontAwesomeIcon icon={faPhoneAlt} />
-                  <span>(201) 555-0124</span>
+                  <span>+380933130025 +380983130025</span>
                 </p>
                 <p>
                   <FontAwesomeIcon icon={faEnvelope} />

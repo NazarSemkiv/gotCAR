@@ -42,6 +42,16 @@ class IndexPage extends React.Component {
       }
           return (
             <Layout  >
+
+                <script dangerouslySetInnerHTML={{
+                    __html: `(function(d, w, s) {
+                    var widgetHash = 'zoptn64fxl0uo2gmwpgh', gcw = d.createElement(s); gcw.type = 'text/javascript'; gcw.async = true;
+                    gcw.src = '//widgets.binotel.com/getcall/widgets/'+ widgetHash +'.js';
+                    var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(gcw, sn);
+                })(document, window, 'script');`
+                }}/>
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6MBQ9D"
+                                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <SEO title="GotCAR" />
                     <Header/>
                     <SliderSection/>
